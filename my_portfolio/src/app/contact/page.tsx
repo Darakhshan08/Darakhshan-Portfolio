@@ -15,15 +15,15 @@ export default function Contact() {
             Get In Touch
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's{" "}
-            <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">
-              Connect
-            </span>
-          </h1>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision.
-          </p>
+  Let&#39;s{" "}
+  <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">
+    Connect
+  </span>
+</h1>
+<p className="text-gray-300 max-w-2xl mx-auto">
+  I&#39;m always open to discussing new projects, creative ideas, or
+  opportunities to be part of your vision.
+</p>
         </div>
 
         {/* Contact Information Centered */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import  Link  from "next/link"; ;
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="border-t border-white/10 mt-20">
@@ -15,10 +15,15 @@ const Footer = () => {
                 arakhshan
               </span>
             </Link>
-            <p className="text-gray-300 mb-6 max-w-md">
+            {/* <p className="text-gray-300 mb-6 max-w-md">
               Full Stack Developer specializing in creating beautiful,
               functional, and user-friendly applications that deliver
               exceptional experiences.
+            </p> */}
+              <p className="text-gray-300 mb-6 max-w-md">
+              Full Stack Developer exploring Agentic AI, AI Chatbots,
+               and Data Science, creating functional and user-friendly
+                applications that deliver exceptional experiences.
             </p>
             <div className="flex gap-4">
               <a href="https://github.com/Darakhshan08" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center hover:bg-white/10 transition-all">
@@ -51,7 +56,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <p>Karachi, Pakistan</p>
               <p>darakhshanshah8@gmail.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>+92 3142075010</p>
             </div>
           </div>
         </div>

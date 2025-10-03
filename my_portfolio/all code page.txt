@@ -1,0 +1,339 @@
+import {
+  GithubIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  CoffeeIcon,
+} from "lucide-react";
+import React from "react";
+import { render } from "react-dom";
+export default function Portfolio() {
+  return (
+    <div className="w-full">
+      <header className="w-full max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
+        <a href="/" className="text-2xl font-bold text-blue-500">
+          {7}
+        </a>
+
+        <nav className="flex items-center gap-8">
+          <a className="hover:text-blue-500">Home</a>
+          <a className="hover:text-blue-500">About</a>
+          <a className="hover:text-blue-500">Tech Stack</a>
+          <a className="hover:text-blue-500">Projects</a>
+          <a className="hover:text-blue-500">Contact</a>
+        </nav>
+
+        <div className="flex items-center gap-4">
+          <a>
+            <GithubIcon className="w-5 h-5" />
+          </a>
+          <a>
+            <TwitterIcon className="w-5 h-5" />
+          </a>
+          <a>
+            <LinkedinIcon className="w-5 h-5" />
+          </a>
+        </div>
+      </header>
+
+      <main className="w-full max-w-7xl mx-auto px-4">
+        <section className="py-20 flex items-center justify-between">
+          <div>
+            <h1 className="text-5xl font-bold mb-4">
+              Hi 👋,
+              <br />
+              My name is
+              <br />
+              <span className="text-blue-500">Pavan MG</span>
+              <br />I build things for web
+            </h1>
+          </div>
+          <div className="relative">
+            <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-blue-500">
+              <img
+                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36"
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <h2 className="text-3xl font-bold text-center mb-4">My Tech Stack</h2>
+          <p className="text-center text-gray-600 mb-12">
+            Technologies I've been working with recently
+          </p>
+
+          <div className="grid grid-cols-6 gap-12">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+              alt="Redux"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+              alt="Tailwind"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+              alt="Sass"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+              alt="VS Code"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
+              alt="Postman"
+              className="w-16 h-16"
+            />
+          </div>
+        </section>
+
+        <section className="py-20">
+          <h2 className="text-3xl font-bold text-center mb-4">Projects</h2>
+          <p className="text-center text-gray-600 mb-12">
+            Things I've built so far
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-4 md:px-6 lg:px-8">
+            <div className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src="https://picsum.photos/400/250?random=1"
+                alt="E-commerce Platform"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">E-commerce Platform</h3>
+                <p className="text-gray-600 mb-4">
+                  A full-featured online shopping platform with cart
+                  functionality and payment integration
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Tech stack: React, Node.js, MongoDB, Stripe
+                </p>
+                <div className="flex gap-4">
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    Live Preview
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src="https://picsum.photos/400/250?random=2"
+                alt="Social Media Dashboard"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">
+                  Social Media Dashboard
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Analytics dashboard for social media metrics with real-time
+                  updates
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Tech stack: Vue.js, Firebase, D3.js
+                </p>
+                <div className="flex gap-4">
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    Live Preview
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src="https://picsum.photos/400/250?random=3"
+                alt="Task Management App"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Task Management App</h3>
+                <p className="text-gray-600 mb-4">
+                  Collaborative task management tool with real-time updates
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Tech stack: React, Redux, Socket.io
+                </p>
+                <div className="flex gap-4">
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    Live Preview
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src="https://picsum.photos/400/250?random=4"
+                alt="Weather App"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Weather App</h3>
+                <p className="text-gray-600 mb-4">
+                  Real-time weather forecasting app with location-based updates
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Tech stack: React Native, OpenWeather API
+                </p>
+                <div className="flex gap-4">
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    Live Preview
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src="https://picsum.photos/400/250?random=5"
+                alt="Fitness Tracker"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Fitness Tracker</h3>
+                <p className="text-gray-600 mb-4">
+                  Personal fitness tracking application with workout plans
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Tech stack: React, TypeScript, Chart.js
+                </p>
+                <div className="flex gap-4">
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    Live Preview
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img
+                src="https://picsum.photos/400/250?random=6"
+                alt="Recipe Finder"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Recipe Finder</h3>
+                <p className="text-gray-600 mb-4">
+                  Recipe search and management app with meal planning features
+                </p>
+                <p className="text-sm text-gray-500 mb-4">
+                  Tech stack: Next.js, Prisma, PostgreSQL
+                </p>
+                <div className="flex gap-4">
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    Live Preview
+                  </a>
+                  <a className="flex items-center gap-2 text-sm hover:text-blue-500">
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="w-full border-t mt-20">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <div className="flex items-center justify-between">
+            <a href="/" className="text-2xl font-bold text-blue-500">
+              {7}
+            </a>
+
+            <div className="flex items-center gap-4">
+              <span>+91 0345 0678</span>
+              <span>info@example.com</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <a>
+                <GithubIcon className="w-5 h-5" />
+              </a>
+              <a>
+                <TwitterIcon className="w-5 h-5" />
+              </a>
+              <a>
+                <LinkedinIcon className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between mt-8 pt-8 border-t">
+            <nav className="flex gap-8">
+              <a>Home</a>
+              <a>About</a>
+              <a>Technologies</a>
+              <a>Projects</a>
+              <a>Contact</a>
+            </nav>
+
+            <p className="flex items-center gap-2">
+              Designed and built by Pavan MG with Love &{" "}
+              <CoffeeIcon className="w-4 h-4" />
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+render(<Portfolio />, document.getElementById("root"));
